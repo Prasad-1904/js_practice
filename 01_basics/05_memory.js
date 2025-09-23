@@ -8,7 +8,7 @@ let anotherName = name
 // when a new variable using same value as other variable (as shpwn above the value is coppied and stored in it.)
 
 let userA = {
-    name : "prasad",
+    name : "prasad", 
     age : 25
 }
 
