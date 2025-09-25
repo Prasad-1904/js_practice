@@ -10,8 +10,8 @@ const user = {
     isLoggedIn: false
 }
 
-console.log(user.email); // not recommended
-console.log(user["email"]); //recommended
+console.log(user.email); 
+console.log(user["email"]); 
 
 // using symbol in object
 

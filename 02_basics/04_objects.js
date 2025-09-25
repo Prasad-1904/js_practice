@@ -63,6 +63,26 @@ console.log(Object.keys(appUser)); // gives array of keys
 console.log(Object.values(appUser)); // gives array of the values
 console.log(Object.entries(appUser)); // gives the array of key value pair as an array
 
-console.log(appUser.hasOwnProperty('isLoggedIn'));
+console.log(appUser.hasOwnProperty('isLoggedIn')); // checkes if the object has such property
 
+//----------------------------------------
 
+// extracting values, destructuring
+
+const course = {
+    courseName: "JavaScript",
+    price: 999,
+    courseTeacher: "J. Raman"
+}
+
+const {courseTeacher: teacher} = course
+console.log(teacher); 
+// so as to not repetedly use the course.courseTeacher. We can just use teacher for it.
+//---------------------------------------
+
+// apis use json 
+// json is object 
+// {   
+//     "id": "1234"
+//     "name": "prasad"
+// }
