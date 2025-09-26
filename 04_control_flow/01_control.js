@@ -108,6 +108,8 @@ const prize = 100
 
 prize < 80 ? console.log("less than 80") : console.log("more than 80");
 
+// works similar to if and else
+// condition ? if true code : else code
 
-
+// ---------------------------------------------
 
