@@ -6,7 +6,8 @@
 (function Hello() {
     console.log("hello");
     
-})(); // semi colon after the end is mandatory. if not given the function will not understant where to end.
+})(); // semi colon after the end is mandatory. 
+// if not given the function will not understant where to end.
 
 
 // unnamed iife

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>List of the Students</h1>
+    <h3>click for further details</h3>
+    <ul id="student-list">
+        <li class="st" id="one">Akash Varma</li>
+        <li class="st" id="two">Sakshi Patel</li>
+        <li class="st" id="three">Mayur Shah</li>
+        <li class="st" id="four">Meena More</li>
+        <li class="st" id="five">Sudha Sane</li>
+        <li class="st" id="six">Prakash Kale</li>
+        <li class="st" id="seven">Sundar Trivedi</li>
+    </ul>
+</body>
+<script>
+    document.getElementById('one').addEventListener('click', function(e){
+        console.log(e);
+    }, false) // false is for event bubbling ie event propogation will be from botttom to top.
+              // true is for evennt capture ie event propogation will be from top to bottom.
+
+    // click on student name to delete it
+
+    document.querySelector('#student-list').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        const remove = e.target
+        remove.remove()
+    })
+</script>
+</html>
